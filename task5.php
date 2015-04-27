@@ -26,18 +26,18 @@ function task_5() {
 
 	//Generate form
 	echo '<html>';
-	echo '<form action="task1.php" method=GET target=_blank>';
-	echo 'Make a selection: <select name='.$params[0].'>';
+	echo '<form action="task5.php" method=GET target=_blank>';
+	echo '<select name='.$params[0].'>';
 		//Generate drop down list from parameters not exceeding the length of the parameter list.
 		for($i = 1; $i < $num_params.length; $i++) {
 			echo '<option value="'.$params[$i].'">'.$params[$i].'</option>';
 		}
-	echo '</select><br>';
+	echo '</select>';
   	echo '<input type="submit" value="Select">';
 	echo '</form>';
 	echo '</html>';
 }
 
 //Call to function
-task_5("Months", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+task_5("Months", "Select a month...", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 ?>
