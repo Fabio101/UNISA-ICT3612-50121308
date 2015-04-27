@@ -2,13 +2,15 @@
 /**
 * Author : Fabio Pinto
 * Description as per requirements : 
-	Code a function that will show a form with a drop-down list when called. The function will accept 6
-	parameters:
-		• to define the target of the form
-		• to define the method of the form
-		• to give the select tag a name
-		• to add 3 option values and the text that will appear to the drop-down list.
-	Call the function.
+
+Code a function that will show a form with a drop-down list when called. The function will accept 6
+parameters:
+• to define the target of the form
+• to define the method of the form
+• to give the select tag a name
+• to add 3 option values and the text that will appear to the drop-down list.
+
+Call the function.
 **/
 //Function that generates the form  
 function task_1($target, $method, $selection, $option1 = NULL, $option2 = NULL, $option3 = NULL) {
