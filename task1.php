@@ -15,7 +15,7 @@
 //Function that generates the form  
 function task_1($target, $method, $selection, $option1 = NULL, $option2 = NULL, $option3 = NULL) {
 
-	//count thr number of arguments passed in function call
+	//count the number of arguments passed in function call
 	$count_args = func_num_args();
 	
 	//determine if arguments are greater than the number of mandatory arguments, if yes then populate array with arguments for use later
