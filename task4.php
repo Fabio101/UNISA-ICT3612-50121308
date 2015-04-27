@@ -4,7 +4,7 @@
 * Description as per requirements : 
 
 * Using page 385 as a guide, create and use two functions to illustrate two methods to access a variable
-from within a function. The outcome should look like the screenshot below:
+* from within a function. The outcome should look like the screenshot below:
 **/
 //Variable with global scope
 $sentence = 'The dog ate my homework';
