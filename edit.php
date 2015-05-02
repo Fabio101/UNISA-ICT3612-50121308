@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ex.css">
+</head>
+<body>
+<?php
+
+//Rewritten by Fabio Pinto as per specifications
+
+include('config.php');
+include('menu.php');
+
+if(isset($_GET['id'])){
+
+	$id=$_GET['id'];
+
+	if(isset($_POST['submit'])){
+		$name=$_POST['name'];
+		$age=$_POST['age'];
+		
+		//Modifieying the query to make use of question mark parameters
+		$query = "UPDATE addd SET name= ?, age= ? WHERE id= ?";
+
+		//Preparing statement
+		$statement = $db->prepare($query);
+	
+		//Binding question mark parameter numbers to variable
+		$statement->bindValue(1, $name);
+		$statement->bindValue(2, $age);
+		$statement->bindValue(3, $id);			
+
+		//executing statement
+		$statement->execute();
+
+		if($query){
+			header('location:index.php');
+		}
+	}
+
+//Modifiying statement to use a named parameter
+$query2 = "SELECT * FROM addd WHERE id= :id";
+
+//Preparing...
+$statement2 = $db->prepare($query2);
+
+//Binding name parameter to variable
+$statement2->bindValue(':id', $id);
+
+//executing
+$statement2->execute();
+
+//Fetching the result data
+$rows = $statement2->fetchAll();
+
+//Looping through rows to be used to fill text fields in form
+foreach ($rows as $row) {
+?>
+
+<form method="post" action="">
+Name:<input type="text" name="name" value="<?php echo $row['name']; ?>" /><br />
+Age:<input type="text" name="age" value="<?php echo $row['age']; ?>" /><br /><br />
+<br />
+<input type="submit" name="submit" value="update" />
+</form>
+<?php
+	}
+}
+?>
+</body>
+</html>
+<a href="index.php">Back...<a>

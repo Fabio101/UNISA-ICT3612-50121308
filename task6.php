@@ -66,3 +66,4 @@ echo '</br></br>';
 echo 'The animals are a '.$animalFarm->getDog().' ,a '.$animalFarm->getCat().' and a '.$animalFarm->getBird().'.';
 
 ?>
+</br><a href="index.html">Back...<a>

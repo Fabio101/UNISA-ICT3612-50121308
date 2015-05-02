@@ -25,3 +25,4 @@ echo '<u>Access a global variable from within a function: Method 1</u></br>'; me
 echo '</br></br><u>Access a global variable from within a function: Method 2</u></br>'; method2();
 
 ?>
+</br><a href="index.html">Back...<a>

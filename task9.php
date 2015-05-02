@@ -66,3 +66,4 @@ $newStudent->studentClassNumber = '123';
 
 $newStudent->write_information();
 ?>
+</br><a href="index.html">Back...<a>

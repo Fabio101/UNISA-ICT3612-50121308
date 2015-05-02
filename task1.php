@@ -40,3 +40,4 @@ function task_1($target, $method, $selection, $option1 = NULL, $option2 = NULL, 
 //Call to function
 task_1("_blank", "GET", "Cars", "Volkswagen", "BMW", "Mercedes Benz");
 ?>
+</br><a href="index.html">Back...<a>

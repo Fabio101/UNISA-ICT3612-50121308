@@ -41,3 +41,4 @@ function task_5() {
 //Call to function
 task_5("Months", "Select a month...", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 ?>
+</br><a href="index.html">Back...<a>

@@ -25,3 +25,4 @@ $assoc_array = array('sky' => 'blue', 'grass' => 'green', 'clouds' => 'white');
 //Call to function
 task_2($assoc_array)
 ?>
+</br><a href="index.html">Back...<a>

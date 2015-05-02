@@ -28,3 +28,4 @@ echo '</br><u>Passing by reference</u></br>';
 echo $sentence.' -> '; byref($sentence); echo $sentence;
 
 ?>
+</br><a href="index.html">Back...<a>
