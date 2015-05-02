@@ -41,5 +41,3 @@ function task_1($target, $method, $selection, $option1 = NULL, $option2 = NULL, 
 task_1("_blank", "GET", "Cars", "Volkswagen", "BMW", "Mercedes Benz");
 ?>
 </br><a href="index.html">Back...<a>
-</br><iframe src="task1.txt" height="400" width="1200">
- <p>Your browser does not support iframes.</p></iframe>

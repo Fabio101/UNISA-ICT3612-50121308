@@ -1,16 +1,8 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="ex.css">
-</head>
-<body>
 <?php
 
 //Rewritten by Fabio Pinto as per specifications
 
-//Silencing output
-ob_start();
 include('config.php');
-ob_end_clean();
 include('menu.php');
 
 if(isset($_GET['id'])){
@@ -69,8 +61,3 @@ Age:<input type="text" name="age" value="<?php echo $row['age']; ?>" /><br /><br
 	}
 }
 ?>
-</body>
-</html>
-<a href="index.php">Back...<a>
-</br><iframe src="edit.txt" height="400" width="1200">
- <p>Your browser does not support iframes.</p></iframe>

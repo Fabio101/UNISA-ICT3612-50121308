@@ -34,5 +34,3 @@ echo '</br></br>';
 Animals::catMeow();
 ?>
 </br><a href="index.html">Back...<a>
-</br><iframe src="task8.txt" height="400" width="1200">
- <p>Your browser does not support iframes.</p></iframe>

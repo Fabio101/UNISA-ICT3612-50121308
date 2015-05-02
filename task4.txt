@@ -26,5 +26,3 @@ echo '</br></br><u>Access a global variable from within a function: Method 2</u>
 
 ?>
 </br><a href="index.html">Back...<a>
-</br><iframe src="task4.txt" height="400" width="1200">
- <p>Your browser does not support iframes.</p></iframe>

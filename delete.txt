@@ -1,16 +1,8 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="ex.css">
-</head>
-<body>
 <?php
 
 //Rewritten by Fabio Pinto as per specifications
 
-//Silencing output
-ob_start();
 include('config.php');
-ob_end_clean();
 include('menu.php');
 //Pear Mail has been installed and will be used to notify us when a user is deleted
 require_once 'Mail.php';
@@ -59,8 +51,3 @@ if(isset($_GET['id'])){
 	}
 }
 ?>
-</body>
-</html>
-<a href="index.php">Back...<a>
-</br><iframe src="delete.txt" height="400" width="1200">
- <p>Your browser does not support iframes.</p></iframe>
